@@ -23,11 +23,11 @@ Franna is built in four phases that mirror the natural dependency order of a Pha
   3. African bush scene is visible as the game world background (placeholder or final art)
   4. Rifle/scope overlay is visible in the unzoomed view
   5. Two-camera setup (world + UI) is established; HUDScene launches as a parallel scene
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: Project scaffold — Vite + Phaser 3 setup, atlas workflow, scene graph (Boot → Preload → Menu → Game → Result)
-- [ ] 01-02: Scene architecture — two-camera setup, GameState object, depth constants, Phaser timer, background + scope overlay rendering
+- [ ] 01-01-PLAN.md — Project scaffold: Vite + Phaser 3 setup, constants, all six scene shells with working navigation
+- [ ] 01-02-PLAN.md — Scene architecture: two-camera setup, GameState factory, background placeholder, scope overlay skeleton, Phaser timer scaffold, HUDScene event wiring
 
 ### Phase 2: Core Gameplay
 **Goal**: A complete, playable round — animals spawn and move, the player can aim and shoot with the scope mechanic, hit/miss detection works correctly in both views, the HUD shows score and timer, and the round ends with a results screen.
