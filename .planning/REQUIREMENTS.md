@@ -71,31 +71,31 @@ Deferred to future release. Tracked but not in current roadmap.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| AIM-01 | — | Pending |
-| AIM-02 | — | Pending |
-| AIM-03 | — | Pending |
-| AIM-04 | — | Pending |
-| TGT-01 | — | Pending |
-| TGT-02 | — | Pending |
-| TGT-03 | — | Pending |
-| TGT-04 | — | Pending |
-| TGT-05 | — | Pending |
-| TGT-06 | — | Pending |
-| FLOW-01 | — | Pending |
-| FLOW-02 | — | Pending |
-| FLOW-03 | — | Pending |
-| FLOW-04 | — | Pending |
-| FLOW-05 | — | Pending |
-| ENV-01 | — | Pending |
-| ENV-02 | — | Pending |
-| ENV-03 | — | Pending |
-| ENV-04 | — | Pending |
+| AIM-01 | Phase 2 | Pending |
+| AIM-02 | Phase 2 | Pending |
+| AIM-03 | Phase 2 | Pending |
+| AIM-04 | Phase 2 | Pending |
+| TGT-01 | Phase 2 | Pending |
+| TGT-02 | Phase 2 | Pending |
+| TGT-03 | Phase 2 | Pending |
+| TGT-04 | Phase 2 | Pending |
+| TGT-05 | Phase 2 | Pending |
+| TGT-06 | Phase 3 | Pending |
+| FLOW-01 | Phase 2 | Pending |
+| FLOW-02 | Phase 2 | Pending |
+| FLOW-03 | Phase 2 | Pending |
+| FLOW-04 | Phase 1 | Pending |
+| FLOW-05 | Phase 4 | Pending |
+| ENV-01 | Phase 1 | Pending |
+| ENV-02 | Phase 1 | Pending |
+| ENV-03 | Phase 3 | Pending |
+| ENV-04 | Phase 3 | Pending |
 
 **Coverage:**
 - v1 requirements: 19 total
-- Mapped to phases: 0
-- Unmapped: 19 ⚠️
+- Mapped to phases: 19
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-19*
-*Last updated: 2026-02-19 after initial definition*
+*Last updated: 2026-02-19 — phase mappings added after roadmap creation*
