@@ -1,6 +1,7 @@
 import { SCENE_KEYS, DEPTH } from '../constants.js';
 import { createGameState }   from '../GameState.js';
 import { AnimalManager }     from '../AnimalManager.js';
+import { createBackground }  from '../Background.js';
 
 const SCOPE_RADIUS = 140;
 const SCOPE_ZOOM   = 2.5;
@@ -23,25 +24,9 @@ export class GameScene extends Phaser.Scene {
     this.uiCamera = this.cameras.add(0, 0, width, height, false, 'ui');
     this.uiCamera.setBackgroundColor('rgba(0,0,0,0)');
 
-    // ── 3. Background ────────────────────────────────────────────────────
-    const sky = this.add.rectangle(width / 2, height * 0.3, width, height * 0.6, 0x87ceeb)
-      .setDepth(DEPTH.SKY);
-    const hills = this.add.rectangle(width / 2, height * 0.55, width, height * 0.3, 0x6b8e4e)
-      .setDepth(DEPTH.HILLS);
-    const ground = this.add.rectangle(width / 2, height * 0.8, width, height * 0.4, 0xc8a060)
-      .setDepth(DEPTH.MIDGROUND);
-
-    // Some grass tufts for atmosphere
-    for (let i = 0; i < 12; i++) {
-      const gx = Math.random() * width;
-      const gy = height * 0.6 + Math.random() * height * 0.25;
-      const grass = this.add.rectangle(gx, gy, 8 + Math.random() * 12, 15 + Math.random() * 20, 0x4a7a30)
-        .setDepth(DEPTH.FOREGROUND);
-      this.uiCamera.ignore(grass);
-    }
-
-    this.worldObjects = [sky, hills, ground];
-    this.uiCamera.ignore(this.worldObjects);
+    // ── 3. Background — layered African savanna ────────────────────────
+    this.worldObjects = createBackground(this);
+    this.worldObjects.forEach(obj => this.uiCamera.ignore(obj));
 
     // ── 4. Scope overlay ─────────────────────────────────────────────────
     this.scoped = false;
