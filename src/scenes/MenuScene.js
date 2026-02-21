@@ -5,7 +5,7 @@ export class MenuScene extends Phaser.Scene {
 
   create() {
     const { width, height } = this.scale;
-    this.add.text(width / 2, height / 2 - 80, 'FRANNA', { fontSize: '72px', color: '#ffffff', fontStyle: 'bold' }).setOrigin(0.5);
+    this.add.text(width / 2, height / 2 - 80, 'JOHANN', { fontSize: '72px', color: '#ffffff', fontStyle: 'bold' }).setOrigin(0.5);
     this.add.text(width / 2, height / 2 + 20, 'Press SPACE to Play', { fontSize: '28px', color: '#cccccc' }).setOrigin(0.5);
 
     const spaceKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
